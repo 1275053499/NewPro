@@ -149,6 +149,10 @@
 		928DBBA8225365920038722F /* YJLAttributesLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 928DBBA7225365920038722F /* YJLAttributesLabel.m */; };
 		92B04B5A22548CCD004800E0 /* NewProProtocalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B04B5822548CCD004800E0 /* NewProProtocalVC.m */; };
 		92B04B5B22548CCD004800E0 /* NewProProtocalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B04B5922548CCD004800E0 /* NewProProtocalVC.xib */; };
+		92B04B5F22549E15004800E0 /* NewProCommunityNeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B04B5D22549E15004800E0 /* NewProCommunityNeedCell.m */; };
+		92B04B6022549E15004800E0 /* NewProCommunityNeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B04B5E22549E15004800E0 /* NewProCommunityNeedCell.xib */; };
+		92B04B642254A53F004800E0 /* NewProAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B04B632254A53F004800E0 /* NewProAlertView.m */; };
+		92B04B662254A54F004800E0 /* NewProAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B04B652254A54F004800E0 /* NewProAlertView.xib */; };
 		9A3C49F72E5452B4B3F52047 /* Pods_NewFZKProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C8576B8A87381BE036A540 /* Pods_NewFZKProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -454,6 +458,12 @@
 		92B04B5722548CCD004800E0 /* NewProProtocalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewProProtocalVC.h; sourceTree = "<group>"; };
 		92B04B5822548CCD004800E0 /* NewProProtocalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProProtocalVC.m; sourceTree = "<group>"; };
 		92B04B5922548CCD004800E0 /* NewProProtocalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProProtocalVC.xib; sourceTree = "<group>"; };
+		92B04B5C22549E15004800E0 /* NewProCommunityNeedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewProCommunityNeedCell.h; sourceTree = "<group>"; };
+		92B04B5D22549E15004800E0 /* NewProCommunityNeedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProCommunityNeedCell.m; sourceTree = "<group>"; };
+		92B04B5E22549E15004800E0 /* NewProCommunityNeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProCommunityNeedCell.xib; sourceTree = "<group>"; };
+		92B04B622254A53F004800E0 /* NewProAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewProAlertView.h; sourceTree = "<group>"; };
+		92B04B632254A53F004800E0 /* NewProAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProAlertView.m; sourceTree = "<group>"; };
+		92B04B652254A54F004800E0 /* NewProAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProAlertView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -577,6 +587,7 @@
 		928DB9E52252F4640038722F /* ToolsView */ = {
 			isa = PBXGroup;
 			children = (
+				92B04B612254A520004800E0 /* 自定义弹框 */,
 				92B04B5622548C8E004800E0 /* 协议 */,
 				928DB9E62252F4640038722F /* 苹果隐私政策 */,
 			);
@@ -1161,6 +1172,9 @@
 		928DBB762253042F0038722F /* VIew */ = {
 			isa = PBXGroup;
 			children = (
+				92B04B5C22549E15004800E0 /* NewProCommunityNeedCell.h */,
+				92B04B5D22549E15004800E0 /* NewProCommunityNeedCell.m */,
+				92B04B5E22549E15004800E0 /* NewProCommunityNeedCell.xib */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -1293,6 +1307,16 @@
 			path = "协议";
 			sourceTree = "<group>";
 		};
+		92B04B612254A520004800E0 /* 自定义弹框 */ = {
+			isa = PBXGroup;
+			children = (
+				92B04B622254A53F004800E0 /* NewProAlertView.h */,
+				92B04B632254A53F004800E0 /* NewProAlertView.m */,
+				92B04B652254A54F004800E0 /* NewProAlertView.xib */,
+			);
+			path = "自定义弹框";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1405,12 +1429,14 @@
 				928DB9BC2252E7670038722F /* Assets.xcassets in Resources */,
 				928DBB262252F4650038722F /* PGDatePicker.bundle in Resources */,
 				928DBAD12252F4650038722F /* GuideImage.bundle in Resources */,
+				92B04B6022549E15004800E0 /* NewProCommunityNeedCell.xib in Resources */,
 				92B04B5B22548CCD004800E0 /* NewProProtocalVC.xib in Resources */,
 				928DBB5C2252FAC60038722F /* NewProCommunityVC.xib in Resources */,
 				928DBB392252F8440038722F /* NewFZKBaseVC.xib in Resources */,
 				928DB9BA2252E7640038722F /* Main.storyboard in Resources */,
 				928DBB94225332FF0038722F /* NewProLoginAACell.xib in Resources */,
 				928DBBA422535E3E0038722F /* NewProRegisterBBCell.xib in Resources */,
+				92B04B662254A54F004800E0 /* NewProAlertView.xib in Resources */,
 				928DBB9F22535E2F0038722F /* NewProRegisterAACell.xib in Resources */,
 				928DBB612252FADA0038722F /* NewProMineVC.xib in Resources */,
 				928DBB85225310450038722F /* NewProLoginVC.xib in Resources */,
@@ -1511,6 +1537,7 @@
 			files = (
 				928DBB1F2252F4650038722F /* PGPickerColumnCell.m in Sources */,
 				928DBB052252F4650038722F /* UIAlertController+Blocks.m in Sources */,
+				92B04B5F22549E15004800E0 /* NewProCommunityNeedCell.m in Sources */,
 				928DBAE72252F4650038722F /* JXCategoryTitleImageCellModel.m in Sources */,
 				928DBAF52252F4650038722F /* JXCategoryViewAnimator.m in Sources */,
 				928DBB042252F4650038722F /* UIButton+EnlargeTouchArea.m in Sources */,
@@ -1598,6 +1625,7 @@
 				928DBAE12252F4650038722F /* JXCategoryIndicatorView.m in Sources */,
 				928DBB84225310450038722F /* NewProLoginVC.m in Sources */,
 				928DBB202252F4650038722F /* PGPickerColumnView.m in Sources */,
+				92B04B642254A53F004800E0 /* NewProAlertView.m in Sources */,
 				928DBADE2252F4650038722F /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				928DBB0D2252F4650038722F /* NSString+Category.m in Sources */,
 				928DBAEA2252F4650038722F /* JXCategoryTitleView.m in Sources */,
