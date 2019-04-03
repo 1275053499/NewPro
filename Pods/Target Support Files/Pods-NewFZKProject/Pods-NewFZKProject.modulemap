@@ -1,0 +1,6 @@
+framework module Pods_NewFZKProject {
+  umbrella header "Pods-NewFZKProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
