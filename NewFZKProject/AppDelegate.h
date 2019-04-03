@@ -10,8 +10,11 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+
++ (AppDelegate *)appDelegate;
+
 @property (strong, nonatomic) UIWindow *window;
 
-
+- (void)setSelectedTabBarIndex:(NSInteger)index;//选择tabbar index
 @end
 

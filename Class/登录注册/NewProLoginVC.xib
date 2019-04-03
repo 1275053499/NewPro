@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewProLoginVC">
+            <connections>
+                <outlet property="MIDBgView" destination="15o-la-5mA" id="tIT-vh-wtH"/>
+                <outlet property="closeBtn" destination="EFB-a3-KTJ" id="KT7-8l-N4q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login001" translatesAutoresizingMaskIntoConstraints="NO" id="eR4-OI-9UX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="16"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFB-a3-KTJ">
+                    <rect key="frame" x="365" y="44" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="b0h-1Y-ki7"/>
+                        <constraint firstAttribute="height" constant="44" id="bwk-JU-oFL"/>
+                    </constraints>
+                    <state key="normal" image="login005"/>
+                    <connections>
+                        <action selector="CloseAction:" destination="-1" eventType="touchUpInside" id="bML-jm-bOL"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15o-la-5mA">
+                    <rect key="frame" x="37" y="309" width="340" height="290"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="340" id="BBi-NK-oOY"/>
+                        <constraint firstAttribute="height" constant="290" id="a7u-hs-P3U"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login002" translatesAutoresizingMaskIntoConstraints="NO" id="b8N-Fu-ab7">
+                    <rect key="frame" x="0.0" y="58" width="16" height="16"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="b8N-Fu-ab7" firstAttribute="centerY" secondItem="EFB-a3-KTJ" secondAttribute="centerY" id="2KL-xP-FdQ"/>
+                <constraint firstItem="b8N-Fu-ab7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="4zC-Gc-c2v"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="EFB-a3-KTJ" secondAttribute="trailing" constant="5" id="BDa-yv-M2z"/>
+                <constraint firstItem="15o-la-5mA" firstAttribute="centerX" secondItem="eR4-OI-9UX" secondAttribute="centerX" id="H7e-XP-JM5"/>
+                <constraint firstItem="eR4-OI-9UX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ON3-GG-jjx"/>
+                <constraint firstItem="eR4-OI-9UX" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="WYw-W7-FZN"/>
+                <constraint firstItem="eR4-OI-9UX" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="XfT-pz-q82"/>
+                <constraint firstItem="EFB-a3-KTJ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="ZOc-6u-GMK"/>
+                <constraint firstItem="15o-la-5mA" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="265" id="gTn-QA-BZF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-303" y="-150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login001" width="375" height="416.5"/>
+        <image name="login002" width="74" height="27"/>
+        <image name="login005" width="14.5" height="14.5"/>
+    </resources>
+</document>

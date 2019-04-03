@@ -7,17 +7,100 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AppleProtocalView.h"
 @interface AppDelegate ()
-
+@property (nonatomic, strong) FZKMianVC *mainVC;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 启动图片延时: 1秒
+    [NSThread sleepForTimeInterval:0.5];
+    
+    
+    
+    /************rootview************/
+    [self buidMain     ];
+    /************rootview************/
+    
+    /************键盘设置************/
+    [self setIQKEY     ];
+    /************键盘设置************/
     return YES;
+}
+#pragma mark - 选择tabbar index
+- (void)setSelectedTabBarIndex:(NSInteger)index{
+    [self.mainVC.MikoTabBar setSelectedIndex:index];
+}
+
++ (AppDelegate *)appDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
+
+- (void)buidMain{
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor     = [UIColor whiteColor];
+    
+    //    if (![UserDedaults objectForKey:@"firstLogin"]) {//第一次登录
+    //        FZKGuidePageView * guidePageView = [[FZKGuidePageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    //        guidePageView.guidePageBlcok = ^(UIView *view) {
+    //
+    //            FZKMianVC * mainVC              = [[FZKMianVC alloc] init];
+    //            self.mainVC = mainVC;
+    //            self.window.rootViewController  = mainVC;
+    //
+    //             if (![[NSUserDefaults standardUserDefaults] boolForKey:@"YSZC"]) {
+    //
+    //                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    //
+    //                        AppleProtocalView *View = [[AppleProtocalView alloc]init];
+    //                        View.UseBgClose = NO;
+    //                        [View show];
+    //
+    //                 });
+    //             }
+    //        };
+    //        self.window.rootViewController          =  [[UIViewController alloc]init];
+    //        [self.window.rootViewController.view addSubview:guidePageView];
+    //        [self.window makeKeyAndVisible         ];
+    //    }else{
+    //        FZKMianVC * mainVC              = [[FZKMianVC alloc] init];
+    //        self.window.rootViewController  = mainVC;
+    //        self.mainVC = mainVC;
+    //        [self.window makeKeyAndVisible         ];
+    //
+    //    }
+    
+    FZKMianVC * mainVC              = [[FZKMianVC alloc] init];
+    self.window.rootViewController  = mainVC;
+    self.mainVC                     = mainVC;
+    [self.window makeKeyAndVisible         ];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"YSZC"]) {
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            AppleProtocalView *View = [[AppleProtocalView alloc]init];
+            View.UseBgClose = NO;
+            [View show];
+            
+        });
+    }
+}
+
+-(void)setIQKEY{
+    
+    //键盘处理
+    //写入这个方法后,这个页面将没有这种效果
+    //    [IQKeyboardManager sharedManager].enable = YES;
+    //在键盘上方有一个tooBar,当我们不想它显示出来的时候
+    //    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+    //点击背景收回键盘
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
 }
 
 
