@@ -15,6 +15,6 @@
 
 
 
-
+#import "NewProAlertFieldView.h"
 #import "NewProAlertView.h"
 #endif /* KOOClassVC_h */

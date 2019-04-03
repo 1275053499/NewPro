@@ -153,6 +153,8 @@
 		92B04B6022549E15004800E0 /* NewProCommunityNeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B04B5E22549E15004800E0 /* NewProCommunityNeedCell.xib */; };
 		92B04B642254A53F004800E0 /* NewProAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B04B632254A53F004800E0 /* NewProAlertView.m */; };
 		92B04B662254A54F004800E0 /* NewProAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B04B652254A54F004800E0 /* NewProAlertView.xib */; };
+		92B04B692254B605004800E0 /* NewProAlertFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B04B682254B605004800E0 /* NewProAlertFieldView.m */; };
+		92B04B6B2254B611004800E0 /* NewProAlertFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B04B6A2254B611004800E0 /* NewProAlertFieldView.xib */; };
 		9A3C49F72E5452B4B3F52047 /* Pods_NewFZKProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C8576B8A87381BE036A540 /* Pods_NewFZKProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -464,6 +466,9 @@
 		92B04B622254A53F004800E0 /* NewProAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewProAlertView.h; sourceTree = "<group>"; };
 		92B04B632254A53F004800E0 /* NewProAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProAlertView.m; sourceTree = "<group>"; };
 		92B04B652254A54F004800E0 /* NewProAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProAlertView.xib; sourceTree = "<group>"; };
+		92B04B672254B605004800E0 /* NewProAlertFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewProAlertFieldView.h; sourceTree = "<group>"; };
+		92B04B682254B605004800E0 /* NewProAlertFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProAlertFieldView.m; sourceTree = "<group>"; };
+		92B04B6A2254B611004800E0 /* NewProAlertFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProAlertFieldView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1313,6 +1318,9 @@
 				92B04B622254A53F004800E0 /* NewProAlertView.h */,
 				92B04B632254A53F004800E0 /* NewProAlertView.m */,
 				92B04B652254A54F004800E0 /* NewProAlertView.xib */,
+				92B04B672254B605004800E0 /* NewProAlertFieldView.h */,
+				92B04B682254B605004800E0 /* NewProAlertFieldView.m */,
+				92B04B6A2254B611004800E0 /* NewProAlertFieldView.xib */,
 			);
 			path = "自定义弹框";
 			sourceTree = "<group>";
@@ -1426,6 +1434,7 @@
 				928DBB8F2253109B0038722F /* NewProForgotVC.xib in Resources */,
 				928DB9BF2252E7670038722F /* LaunchScreen.storyboard in Resources */,
 				928DBB8A225310810038722F /* NewProRegisterVC.xib in Resources */,
+				92B04B6B2254B611004800E0 /* NewProAlertFieldView.xib in Resources */,
 				928DB9BC2252E7670038722F /* Assets.xcassets in Resources */,
 				928DBB262252F4650038722F /* PGDatePicker.bundle in Resources */,
 				928DBAD12252F4650038722F /* GuideImage.bundle in Resources */,
@@ -1583,6 +1592,7 @@
 				928DBB222252F4650038722F /* PGPickerTableView.m in Sources */,
 				928DBAF72252F4650038722F /* UIColor+JXAdd.m in Sources */,
 				928DB9B42252E7640038722F /* AppDelegate.m in Sources */,
+				92B04B692254B605004800E0 /* NewProAlertFieldView.m in Sources */,
 				928DBAF02252F4650038722F /* JXCategoryNumberCellModel.m in Sources */,
 				928DBAD02252F4650038722F /* AppleProtocalView.m in Sources */,
 				928DBB382252F8440038722F /* NewFZKBaseVC.m in Sources */,

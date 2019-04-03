@@ -86,31 +86,38 @@
 
 -(void)ruzhu:(UIButton *)btn{
     
+     NewProAlertFieldView * alertview_2         = [[[NSBundle mainBundle]loadNibNamed:@"NewProAlertFieldView" owner:nil options:nil]lastObject];
     
-    NewProAlertView * alertview         = [[[NSBundle mainBundle]loadNibNamed:@"NewProAlertView" owner:nil options:nil]lastObject];
-   
-    alertview.alerttitle_1.text         = @"免费入驻 管理费首月免费";
-    alertview.alerttitle_1.textColor    = RGBA(225, 194, 133, 1);
-    alertview.alerttitle_1.font         = XFont(14);
-   
-    alertview.alerttitle_2.text         = @"管理费标准:1年/300元、1月/100元";
-    alertview.alerttitle_2.textColor    = RGBA(102, 102, 102, 1);
-    alertview.alerttitle_2.font         = XFont(11);
+     alertview_2.backgroundColor           = RGBA(0, 0, 0, 0.7);
+    [KEYWINDOW addSubview:alertview_2];
     
-     alertview.iS_single         = NO;//只显示一个文本
-
-    [alertview.leftbtn  setTitle:@"不开通" forState:UIControlStateNormal];
-    [alertview.rightbtn setTitle:@"开通店铺" forState:UIControlStateNormal];
-    alertview.backgroundColor           = RGBA(0, 0, 0, 0.7);
-    [KEYWINDOW addSubview:alertview];
-    alertview.AlertBlock = ^(NSInteger index) {
-        if (index==1) {//右边按钮
-            
-            
-        }else{
-            
-        }
-    };
+    
+    
+    
+//    NewProAlertView * alertview         = [[[NSBundle mainBundle]loadNibNamed:@"NewProAlertView" owner:nil options:nil]lastObject];
+//
+//    alertview.alerttitle_1.text         = @"免费入驻 管理费首月免费";
+//    alertview.alerttitle_1.textColor    = RGBA(225, 194, 133, 1);
+//    alertview.alerttitle_1.font         = XFont(14);
+//
+//    alertview.alerttitle_2.text         = @"管理费标准:1年/300元、1月/100元";
+//    alertview.alerttitle_2.textColor    = RGBA(102, 102, 102, 1);
+//    alertview.alerttitle_2.font         = XFont(11);
+//
+//     alertview.iS_single         = NO;//只显示一个文本
+//
+//    [alertview.leftbtn  setTitle:@"不开通" forState:UIControlStateNormal];
+//    [alertview.rightbtn setTitle:@"开通店铺" forState:UIControlStateNormal];
+//    alertview.backgroundColor           = RGBA(0, 0, 0, 0.7);
+//    [KEYWINDOW addSubview:alertview];
+//    alertview.AlertBlock = ^(NSInteger index) {
+//        if (index==1) {//右边按钮
+//
+//
+//        }else{
+//
+//        }
+//    };
 }
 
 
