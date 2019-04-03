@@ -25,11 +25,10 @@
 @property (nonatomic,assign) BOOL  iS_single;//是否只有一个文本框
 
 
-
 /*
  
  NewProAlertView * alertview         = [[[NSBundle mainBundle]loadNibNamed:@"NewProAlertView" owner:nil options:nil]lastObject];
- 
+
  alertview.alerttitle_1.text         = @"免费入驻 管理费首月免费";
  alertview.alerttitle_1.textColor    = RGBA(225, 194, 133, 1);
  alertview.alerttitle_1.font         = XFont(14);
@@ -48,9 +47,9 @@
  if (index==1) {//右边按钮
  
  
- }else{
+    }else{
  
- }
+    }
  };
  
  */
