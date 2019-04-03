@@ -29,6 +29,20 @@
     };
     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
     
+    
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+     [ self.xieyiLab setAttributesText:attrStr actionText:arr_text actionRange:arr_range];//d添加到UILabel上面
+    
+    
 }
 
 #pragma mark  多个点击位置进行简单设置
