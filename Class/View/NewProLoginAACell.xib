@@ -146,7 +146,7 @@
                 <outlet property="Passfield" destination="Tft-vp-9w4" id="yIY-zg-Isc"/>
                 <outlet property="Phonefield" destination="U5h-Ne-Jbm" id="cxQ-CE-gu7"/>
             </connections>
-            <point key="canvasLocation" x="171" y="7"/>
+            <point key="canvasLocation" x="33" y="14"/>
         </tableViewCell>
     </objects>
     <resources>

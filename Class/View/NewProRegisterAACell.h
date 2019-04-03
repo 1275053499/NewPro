@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NewProRegisterAACell : UITableViewCell
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *closebtn;
 
 @end
 

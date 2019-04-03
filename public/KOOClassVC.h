@@ -11,7 +11,7 @@
 #import "NewProLoginVC.h"
 #import "NewProForgotVC.h"
 #import "NewProRegisterVC.h"
-
+#import "NewProProtocalVC.h"
 
 
 

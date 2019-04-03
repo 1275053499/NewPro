@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="319.5"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mum-bH-Lii">
-                        <rect key="frame" x="331" y="20" width="44" height="44"/>
+                        <rect key="frame" x="331" y="0.0" width="44" height="44"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="6bY-88-kwJ"/>
                             <constraint firstAttribute="width" constant="44" id="loF-rW-DVk"/>
@@ -31,7 +31,7 @@
                         <state key="normal" image="login005"/>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login002" translatesAutoresizingMaskIntoConstraints="NO" id="cfT-fR-nGv">
-                        <rect key="frame" x="15" y="28.5" width="74" height="27"/>
+                        <rect key="frame" x="15" y="8.5" width="74" height="27"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login009" translatesAutoresizingMaskIntoConstraints="NO" id="TwD-Rc-77L">
                         <rect key="frame" x="40" y="269.5" width="295.5" height="40"/>
@@ -40,7 +40,7 @@
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login008" translatesAutoresizingMaskIntoConstraints="NO" id="qSw-E8-tIz">
-                        <rect key="frame" x="33.5" y="72.5" width="308.5" height="192"/>
+                        <rect key="frame" x="33.5" y="62.5" width="308.5" height="192"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="192" id="Eq3-ML-oOl"/>
                             <constraint firstAttribute="width" constant="308.5" id="sgS-pc-uZT"/>
@@ -56,14 +56,17 @@
                     <constraint firstItem="7OG-7k-eFB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ROF-xd-lUI"/>
                     <constraint firstAttribute="trailing" secondItem="mum-bH-Lii" secondAttribute="trailing" id="XB9-wZ-5mt"/>
                     <constraint firstAttribute="trailing" secondItem="7OG-7k-eFB" secondAttribute="trailing" id="YsB-7r-EkX"/>
-                    <constraint firstItem="TwD-Rc-77L" firstAttribute="top" secondItem="qSw-E8-tIz" secondAttribute="bottom" constant="5" id="ZJH-1R-uhh"/>
-                    <constraint firstItem="mum-bH-Lii" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="qXD-XE-P6Z"/>
+                    <constraint firstItem="TwD-Rc-77L" firstAttribute="top" secondItem="qSw-E8-tIz" secondAttribute="bottom" constant="15" id="ZJH-1R-uhh"/>
+                    <constraint firstItem="mum-bH-Lii" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qXD-XE-P6Z"/>
                     <constraint firstItem="7OG-7k-eFB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yUi-Nt-tNb"/>
                     <constraint firstItem="TwD-Rc-77L" firstAttribute="centerX" secondItem="7OG-7k-eFB" secondAttribute="centerX" id="z3m-9f-LBt"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <point key="canvasLocation" x="-456" y="-115"/>
+            <connections>
+                <outlet property="closebtn" destination="mum-bH-Lii" id="JKc-cq-YgO"/>
+            </connections>
+            <point key="canvasLocation" x="-566" y="-125"/>
         </tableViewCell>
     </objects>
     <resources>

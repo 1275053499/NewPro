@@ -147,6 +147,8 @@
 		928DBBA322535E3E0038722F /* NewProRegisterBBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 928DBBA122535E3E0038722F /* NewProRegisterBBCell.m */; };
 		928DBBA422535E3E0038722F /* NewProRegisterBBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DBBA222535E3E0038722F /* NewProRegisterBBCell.xib */; };
 		928DBBA8225365920038722F /* YJLAttributesLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 928DBBA7225365920038722F /* YJLAttributesLabel.m */; };
+		92B04B5A22548CCD004800E0 /* NewProProtocalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B04B5822548CCD004800E0 /* NewProProtocalVC.m */; };
+		92B04B5B22548CCD004800E0 /* NewProProtocalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B04B5922548CCD004800E0 /* NewProProtocalVC.xib */; };
 		9A3C49F72E5452B4B3F52047 /* Pods_NewFZKProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C8576B8A87381BE036A540 /* Pods_NewFZKProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -449,6 +451,9 @@
 		928DBBA222535E3E0038722F /* NewProRegisterBBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProRegisterBBCell.xib; sourceTree = "<group>"; };
 		928DBBA6225365920038722F /* YJLAttributesLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJLAttributesLabel.h; sourceTree = "<group>"; };
 		928DBBA7225365920038722F /* YJLAttributesLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJLAttributesLabel.m; sourceTree = "<group>"; };
+		92B04B5722548CCD004800E0 /* NewProProtocalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewProProtocalVC.h; sourceTree = "<group>"; };
+		92B04B5822548CCD004800E0 /* NewProProtocalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProProtocalVC.m; sourceTree = "<group>"; };
+		92B04B5922548CCD004800E0 /* NewProProtocalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewProProtocalVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -572,6 +577,7 @@
 		928DB9E52252F4640038722F /* ToolsView */ = {
 			isa = PBXGroup;
 			children = (
+				92B04B5622548C8E004800E0 /* 协议 */,
 				928DB9E62252F4640038722F /* 苹果隐私政策 */,
 			);
 			path = ToolsView;
@@ -1277,6 +1283,16 @@
 			path = YJLAttributesLabel;
 			sourceTree = "<group>";
 		};
+		92B04B5622548C8E004800E0 /* 协议 */ = {
+			isa = PBXGroup;
+			children = (
+				92B04B5722548CCD004800E0 /* NewProProtocalVC.h */,
+				92B04B5822548CCD004800E0 /* NewProProtocalVC.m */,
+				92B04B5922548CCD004800E0 /* NewProProtocalVC.xib */,
+			);
+			path = "协议";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1389,6 +1405,7 @@
 				928DB9BC2252E7670038722F /* Assets.xcassets in Resources */,
 				928DBB262252F4650038722F /* PGDatePicker.bundle in Resources */,
 				928DBAD12252F4650038722F /* GuideImage.bundle in Resources */,
+				92B04B5B22548CCD004800E0 /* NewProProtocalVC.xib in Resources */,
 				928DBB5C2252FAC60038722F /* NewProCommunityVC.xib in Resources */,
 				928DBB392252F8440038722F /* NewFZKBaseVC.xib in Resources */,
 				928DB9BA2252E7640038722F /* Main.storyboard in Resources */,
@@ -1531,6 +1548,7 @@
 				928DBADA2252F4650038722F /* JXCategoryIndicatorImageView.m in Sources */,
 				928DBB1D2252F4650038722F /* PGDatePicker+MonthDayHourMinute.m in Sources */,
 				928DBAF82252F4650038722F /* JXCategoryBaseView.m in Sources */,
+				92B04B5A22548CCD004800E0 /* NewProProtocalVC.m in Sources */,
 				928DBB0B2252F4650038722F /* UIView+Toast.m in Sources */,
 				928DBB102252F4650038722F /* UIControl+UIControl_XY.m in Sources */,
 				928DBB8E2253109B0038722F /* NewProForgotVC.m in Sources */,

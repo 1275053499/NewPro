@@ -13,7 +13,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -38,7 +37,6 @@
     }else{
         NSLog(@"不可点击了");
     }
-    
 }
 
 #pragma mark  注册发送验证码
@@ -71,7 +69,6 @@
 //        [self.timer invalidate];
 //    }];
 }
-
 
 - (void)Timered:(NSTimer*)timer {
     NSLog(@"%ld",self.timeNUm);
@@ -109,6 +106,7 @@
     
 }
 
+
 + (instancetype)cellWithTableView:(UITableView *)tableView {
     NewProLoginBBCell *cell = (NewProLoginBBCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
     if (cell == nil) {
@@ -116,9 +114,7 @@
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
     return cell;
-    
 }
-
 
 #pragma mark判断字符串是否有中文
 -(BOOL)IsChinese:(NSString *)str {

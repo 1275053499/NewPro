@@ -7,7 +7,7 @@
 //
 
 #import "NewProRegisterAACell.h"
-
+#import "NewProRegisterBBCell.h"
 @implementation NewProRegisterAACell
 
 - (void)awakeFromNib {
@@ -20,5 +20,17 @@
 
     
 }
+
++ (instancetype)cellWithTableView:(UITableView *)tableView {
+    NewProRegisterAACell *cell = (NewProRegisterAACell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil]lastObject];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    }
+    return cell;
+    
+}
+
+
 
 @end
