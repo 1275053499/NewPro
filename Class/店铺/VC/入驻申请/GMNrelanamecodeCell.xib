@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GMNrelanamecodeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFC-h2-jeh">
+                        <rect key="frame" x="20" y="18.5" width="58" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="HtO-2u-fjN"/>
+                            <constraint firstAttribute="width" constant="58" id="uCS-Od-8f9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufn-9a-h1J">
+                        <rect key="frame" x="280" y="10.5" width="80" height="30"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="9J9-d4-vPN"/>
+                            <constraint firstAttribute="width" constant="80" id="yaK-Aa-Xpn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="获取验证码">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="CodeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="smX-7p-NOu"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入验证码" textAlignment="right" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9Dx-zc-8zY">
+                        <rect key="frame" x="83" y="10.5" width="187" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="pDf-Yd-kmV"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ufn-9a-h1J" secondAttribute="trailing" constant="15" id="0vC-Xw-W0Q"/>
+                    <constraint firstItem="9Dx-zc-8zY" firstAttribute="centerY" secondItem="IFC-h2-jeh" secondAttribute="centerY" id="Cv8-N3-WNc"/>
+                    <constraint firstItem="IFC-h2-jeh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ITP-Qi-HPG"/>
+                    <constraint firstItem="9Dx-zc-8zY" firstAttribute="leading" secondItem="IFC-h2-jeh" secondAttribute="trailing" constant="5" id="czD-fh-gGh"/>
+                    <constraint firstItem="IFC-h2-jeh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gNO-K9-vB6"/>
+                    <constraint firstItem="ufn-9a-h1J" firstAttribute="leading" secondItem="9Dx-zc-8zY" secondAttribute="trailing" constant="10" id="khO-tt-sSo"/>
+                    <constraint firstItem="ufn-9a-h1J" firstAttribute="centerY" secondItem="IFC-h2-jeh" secondAttribute="centerY" id="ude-FN-xHO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="code" destination="9Dx-zc-8zY" id="Wfo-Tj-PAi"/>
+                <outlet property="codeBtn" destination="ufn-9a-h1J" id="oMC-M1-2Yo"/>
+            </connections>
+            <point key="canvasLocation" x="-124" y="77"/>
+        </tableViewCell>
+    </objects>
+</document>

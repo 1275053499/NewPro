@@ -122,8 +122,8 @@
                 [self.tableView reloadData];
             }else{
                 
-                 [self.navigationController pushViewController:[NSClassFromString(@"NewProRegisterVC") new] animated:YES];
-                 [KEYWINDOW makeToast:@"密码登录" duration:1 position:CSToastPositionCenter];
+//                 [self.navigationController pushViewController:[NSClassFromString(@"NewProRegisterVC") new] animated:YES];
+//                 [KEYWINDOW makeToast:@"密码登录" duration:1 position:CSToastPositionCenter];
             }
         };
         return cell;

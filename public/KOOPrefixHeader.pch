@@ -63,8 +63,12 @@
 #import "UILabel+CopyAndPasteLable.h"
 #import "GLittleBtnControl.h"
 
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <MAMapKit/MAMapKit.h>
 
-
+#import "CGXPickerView.h"
 #import "JXCategoryTitleView.h"
 #import "JXCategoryIndicatorLineView.h"
 #import "DHGuidePageHUD.h"

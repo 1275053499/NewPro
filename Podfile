@@ -18,4 +18,7 @@ target 'NewFZKProject' do
     pod 'RTRootNavigationController'
     pod 'SDAutoLayout'
     pod 'SDCycleScrollView'
+    pod 'AMap3DMap'
+    pod 'AMapSearch'
+    pod 'AMapLocation'
 end

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="KGk-i7-Jjw" customClass="GMNrelanamecommitCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u4-ce-dUh">
+                        <rect key="frame" x="61.5" y="21" width="252" height="38"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.76078431369999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="252" id="BUI-eO-VZf"/>
+                            <constraint firstAttribute="height" constant="38" id="vL6-lO-wq8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="提交认证">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xey-ox-JIW">
+                        <rect key="frame" x="79.5" y="74.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JJC-pa-p95"/>
+                            <constraint firstAttribute="width" constant="20" id="hmq-Ij-ZqV"/>
+                        </constraints>
+                        <state key="normal" image="Certification_2"/>
+                        <state key="selected" image="Certification_1"/>
+                        <connections>
+                            <action selector="GXbtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="b2N-jv-N6M"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="勾选即代表您已阅读并同意《用户协议》" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-1l-d7x">
+                        <rect key="frame" x="99.5" y="69" width="176" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="3yw-Nl-EpG"/>
+                            <constraint firstAttribute="width" constant="176" id="6wA-zz-UzG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5u4-ce-dUh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="2k3-8o-8Xo"/>
+                    <constraint firstItem="NbB-1l-d7x" firstAttribute="top" secondItem="5u4-ce-dUh" secondAttribute="bottom" constant="10" id="5Am-39-wpd"/>
+                    <constraint firstItem="xey-ox-JIW" firstAttribute="centerY" secondItem="NbB-1l-d7x" secondAttribute="centerY" constant="3" id="FOd-ea-wHa"/>
+                    <constraint firstItem="NbB-1l-d7x" firstAttribute="leading" secondItem="xey-ox-JIW" secondAttribute="trailing" id="ipY-0u-YVH"/>
+                    <constraint firstItem="5u4-ce-dUh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rEZ-kv-dwC"/>
+                    <constraint firstItem="NbB-1l-d7x" firstAttribute="centerX" secondItem="5u4-ce-dUh" secondAttribute="centerX" id="zeC-PO-21G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="Commit" destination="5u4-ce-dUh" id="Zqx-WU-9wV"/>
+                <outlet property="GXbtn" destination="xey-ox-JIW" id="cUw-le-VX9"/>
+                <outlet property="textView" destination="NbB-1l-d7x" id="tpa-Jm-NXQ"/>
+            </connections>
+            <point key="canvasLocation" x="258" y="-40"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Certification_1" width="12" height="12"/>
+        <image name="Certification_2" width="12" height="12"/>
+    </resources>
+</document>

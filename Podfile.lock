@@ -14,6 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AMap3DMap (6.6.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.5.6)
+  - AMapLocation (2.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapSearch (6.6.0):
+    - AMapFoundation (~> 1.4)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -51,6 +58,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AMap3DMap
+  - AMapLocation
+  - AMapSearch
   - BlocksKit
   - DZNEmptyDataSet
   - IQKeyboardManager
@@ -70,6 +80,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - AMap3DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
     - BlocksKit
     - DZNEmptyDataSet
     - IQKeyboardManager
@@ -88,6 +102,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AMap3DMap: 37425c7d47420cbfaee88328be3dc3781814b999
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
+  AMapLocation: cf024b53dc03663efb4ea4bcce27d4cce58bb97a
+  AMapSearch: def5983c8ca1a6d7430970046dc814f6e337621d
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
@@ -104,6 +122,6 @@ SPEC CHECKSUMS:
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   STPopup: da1167250a01584af7bcccb898653185f223ec46
 
-PODFILE CHECKSUM: b6cbb7792b6d4274b052a565428b35b8ae7a3e92
+PODFILE CHECKSUM: af2fc6ec28e0772243cb47b441e86ada3c1cc875
 
 COCOAPODS: 1.5.3

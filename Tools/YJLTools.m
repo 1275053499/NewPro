@@ -7,11 +7,11 @@
 //
 
 #import "YJLTools.h"
-//#import "CCHudShowView.h"
+#import "CCHudShowView.h"
 
 @interface YJLTools()
 
-//@property(nonatomic,strong)CCHudShowView *showVC;
+@property(nonatomic,strong)CCHudShowView *showVC;
 
 @end
 
@@ -32,21 +32,21 @@
 }
 
 
-//-(void)CCLoadingViewShow
-//{
-//
-//    _showVC = [[[NSBundle mainBundle] loadNibNamed:@"CCHudShowView" owner:nil options:nil] lastObject];
-//    _showVC.backgroundColor = [UIColor clearColor];
-//    [_showVC show];
-//
-//}
+-(void)CCLoadingViewShow
+{
 
-//-(void)CCLoadingViewDismiss
-//{
-//
-//    [_showVC hide];
-//
-//}
+    _showVC = [[[NSBundle mainBundle] loadNibNamed:@"CCHudShowView" owner:nil options:nil] lastObject];
+    _showVC.backgroundColor = [UIColor clearColor];
+    [_showVC show];
+
+}
+
+-(void)CCLoadingViewDismiss
+{
+
+    [_showVC hide];
+
+}
 
 
 -(BOOL)IsChinese:(NSString *)str {
